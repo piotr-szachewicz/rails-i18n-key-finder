@@ -1,4 +1,5 @@
 require "i18n_helper/version"
+require "i18n_helper/i18n_extension"
 
 module I18nHelper
   class << self
