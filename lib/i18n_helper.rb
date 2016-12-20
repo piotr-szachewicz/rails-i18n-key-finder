@@ -12,14 +12,10 @@ module I18nHelper
   end
 
   class Configuration
-    attr_accessor :option
+    attr_accessor :skip_keys
 
     def initialize
-      @option = 'default_option'
+      @skip_keys = []
     end
-  end
-
-  def translate(args)
-    puts 'translating'
   end
 end
