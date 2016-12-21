@@ -8,6 +8,8 @@ module I18nHelper
             result = translate_without_feature(*args)
             # TODO - maybe it can just work with a new backend
 
+            return result if !I18nHelper.configuration.enabled
+
             key = args.shift.to_s
 
             skip_keys = I18nHelper.configuration.skip_keys
