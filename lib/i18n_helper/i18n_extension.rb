@@ -2,13 +2,13 @@ module I18nHelper
   module I18nExtension
 
     def self.included(base)
+      return unless Rails.env.development? && I18nHelper.configuration.enabled
+
       base.module_eval do
         class << self
           def translate_with_feature(*args)
             result = translate_without_feature(*args)
             # TODO - maybe it can just work with a new backend
-
-            return result if !I18nHelper.configuration.enabled
 
             key = args.shift.to_s
 
