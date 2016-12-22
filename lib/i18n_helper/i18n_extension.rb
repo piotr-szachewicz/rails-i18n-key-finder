@@ -14,7 +14,7 @@ module I18nHelper
 
             skip_keys = I18nHelper.configuration.skip_keys
 
-            should_skip = !result.is_a?(String) || skip_keys.any? do |key_to_skip|
+            should_skip = skip_keys.any? do |key_to_skip|
               key_to_skip.is_a?(Regexp) ? key_to_skip.match(key) : key_to_skip == key
             end
 
