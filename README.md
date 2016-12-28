@@ -1,28 +1,31 @@
 # I18nHelper
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/i18n_helper`. To experiment with that code, run `bin/console` for an interactive prompt.
+In some complex web application sometimes it's difficult to find out where did
+your I18n translations come from.
 
-TODO: Delete this and the text above, and describe your gem
+In this situations this gem comes to help! It allows you to temporarily display
+the i18n keys instead of their values in the web application.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'i18n_helper'
+gem 'i18n_helper', github: 'piotr-szachewicz/rails-i18n-keys'
 ```
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
+After that you need to run the I18nHelper generator:
 
-    $ gem install i18n_helper
+    $ rails generate i18n_helper:install
 
 ## Usage
 
-TODO: Write usage instructions here
+After restarting the application you should see the I18n keys instead of their
+values.
 
 ## Development
 
@@ -32,5 +35,5 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/i18n_helper. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/piotr-szachewicz/i18n_helper. This project is intended to be a safe, welcoming space for collaboration.
 
