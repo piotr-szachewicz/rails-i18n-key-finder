@@ -1,7 +1,7 @@
-require "i18n_helper/version"
-require "i18n_helper/i18n_extension"
+require "i18n_key_finder/version"
+require "i18n_key_finder/i18n_extension"
 
-module I18nHelper
+module I18nKeyFinder
   class << self
     attr_accessor :configuration
   end

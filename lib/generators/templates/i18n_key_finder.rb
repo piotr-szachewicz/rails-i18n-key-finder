@@ -1,4 +1,4 @@
-I18nHelper.configure do |config|
+I18nKeyFinder.configure do |config|
   # Enables overriding the values returned by the I18n translation method.
   config.enabled = true
 
@@ -8,4 +8,4 @@ I18nHelper.configure do |config|
 end
 
 # Adds custom translation code to the I18n gem.
-I18n.include I18nHelper::I18nExtension
+I18n.include I18nKeyFinder::I18nExtension

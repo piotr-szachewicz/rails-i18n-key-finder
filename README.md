@@ -1,4 +1,4 @@
-# I18nHelper
+# I18nKeyFinder
 
 In some complex web application sometimes it's difficult to find out where did
 your I18n translations come from.
@@ -11,16 +11,16 @@ the i18n keys instead of their values in the web application.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'i18n_helper', github: 'piotr-szachewicz/rails-i18n-keys'
+gem 'i18n_key_finder', github: 'piotr-szachewicz/rails-i18n-key-finder'
 ```
 
 And then execute:
 
     $ bundle
 
-After that you need to run the I18nHelper generator:
+After that you need to run the I18nKeyFinder generator:
 
-    $ rails generate i18n_helper:install
+    $ rails generate i18n_key_finder:install
 
 ## Usage
 
@@ -35,5 +35,5 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/piotr-szachewicz/i18n_helper. This project is intended to be a safe, welcoming space for collaboration.
+Bug reports and pull requests are welcome on GitHub at https://github.com/piotr-szachewicz/i18n_key_finder. This project is intended to be a safe, welcoming space for collaboration.
 

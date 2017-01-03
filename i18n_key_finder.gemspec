@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'i18n_helper/version'
+require 'i18n_key_finder/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "i18n_helper"
-  spec.version       = I18nHelper::VERSION
+  spec.name          = "i18n_key_finder"
+  spec.version       = I18nKeyFinder::VERSION
   spec.authors       = ["Piotr Szachewicz"]
   spec.email         = ["piotr.szachewicz@gmail.com"]
 
