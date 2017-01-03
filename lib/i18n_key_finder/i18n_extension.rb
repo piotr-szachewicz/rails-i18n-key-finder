@@ -2,7 +2,7 @@ module I18nKeyFinder
   module I18nExtension
 
     def self.included(base)
-      return unless Rails.env.development? && I18nKeyFinder.configuration.enabled
+      return unless ENV['SHOW_I18N_KEYS'] == 'true'
 
       base.module_eval do
         class << self
