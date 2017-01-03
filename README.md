@@ -24,8 +24,16 @@ After that you need to run the I18nKeyFinder generator:
 
 ## Usage
 
-After restarting the application you should see the I18n keys instead of their
-values.
+You can see the I18n keys instead of their values in the application if you
+start the rails server with the environment variable `SHOW_I18N_KEYS` set to
+true. For example:
+
+    $ SHOW_I18N_KEYS=true bundle exec rails server
+
+If you don't want to see the keys, just start your server as you normally
+would:
+
+    $ bundle exec rails server
 
 ## Development
 
