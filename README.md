@@ -1,4 +1,4 @@
-# I18nKeyFinder
+# I18nKeyFinder [![Build Status](https://travis-ci.org/piotr-szachewicz/rails-i18n-key-finder.svg?branch=master)](https://travis-ci.org/piotr-szachewicz/rails-i18n-key-finder)
 
 In some complex web application sometimes it's difficult to find out where did
 your I18n translations come from.
