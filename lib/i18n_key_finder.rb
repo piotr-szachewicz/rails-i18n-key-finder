@@ -12,11 +12,10 @@ module I18nKeyFinder
   end
 
   class Configuration
-    attr_accessor :skip_keys, :enabled
+    attr_accessor :skip_keys
 
     def initialize
       @skip_keys = []
-      @enabled = true
     end
   end
 end
