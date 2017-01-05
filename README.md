@@ -3,7 +3,7 @@
 In some complex web application sometimes it's difficult to find out where did
 your I18n translations come from.
 
-In this situations this gem comes to help! It allows you to temporarily display
+In these situations this gem comes to help! It allows you to temporarily display
 the i18n keys instead of their values in the web application.
 
 ## Installation
