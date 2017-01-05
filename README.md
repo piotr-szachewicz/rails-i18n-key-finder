@@ -43,5 +43,5 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/piotr-szachewicz/i18n_key_finder. This project is intended to be a safe, welcoming space for collaboration.
+Bug reports and pull requests are welcome on GitHub at https://github.com/piotr-szachewicz/rails-i18n-key-finder. This project is intended to be a safe, welcoming space for collaboration.
 
