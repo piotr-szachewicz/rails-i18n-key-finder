@@ -21,7 +21,8 @@ module I18nKeyFinder
             should_skip ? result : key
           end
 
-          alias_method_chain :translate, :feature
+          alias_method :translate_without_feature, :translate
+          alias_method :translate, :translate_with_feature
           alias :t :translate
         end
       end
