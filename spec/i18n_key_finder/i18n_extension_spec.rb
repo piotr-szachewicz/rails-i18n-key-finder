@@ -29,15 +29,31 @@ describe I18nKeyFinder::I18nExtension do
   context 'SHOW_I18N_KEYS is set to true' do
     before :each do
       allow(ENV).to receive(:[]).and_call_original
-      allow(ENV).to receive(:[]).with('SHOW_I18N_KEYS').and_return 'true'
+      allow(ENV).to receive(:[]).with('SHOW_I18N_KEYS').and_return show_keys
     end
 
-    it 'returns the translation key instead of the value' do
-      expect(subject.translate('my.key')).to eq('my.key')
+    context 'SHOW_I18N_KEYS is set to false' do
+      let(:show_keys) { 'false' }
+
+      it 'calls the original translate method' do
+        expect(subject.translate).to eq('original value')
+      end
     end
 
-    it 'returns the original translation if asked for a key present on the skip_keys list' do
-      expect(subject.translate('test2')).to eq('original value')
+    context 'SHOW_I18N_KEYS is set to true' do
+      let(:show_keys) { 'true' }
+
+      it 'returns the translation key instead of the value' do
+        expect(subject.translate('my.key')).to eq('my.key')
+      end
+
+      it 'returns the original translation if asked for a key present on the skip_keys list' do
+        expect(subject.translate('test2')).to eq('original value')
+      end
+
+      it 'returns the original translation if asked for a key that matches the regexp on the skip_keys list' do
+        expect(subject.translate('xablaergf')).to eq('original value')
+      end
     end
   end
 end
