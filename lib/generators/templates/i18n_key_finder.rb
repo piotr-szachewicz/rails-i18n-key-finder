@@ -1,7 +1,7 @@
 I18nKeyFinder.configure do |config|
   # The keys for which the the gem will return the original values.
   # You can use strings or regular expressions here.
-  config.skip_keys = []
+  config.skip_keys = [/format/, /transliterate/]
 end
 
 # Adds custom translation code to the I18n gem.
