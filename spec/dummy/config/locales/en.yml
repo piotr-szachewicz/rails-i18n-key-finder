@@ -21,3 +21,6 @@
 
 en:
   hello: "Hello world"
+  welcome_page:
+    title: "Hello"
+    text: 'We are very glad to see you here.'
