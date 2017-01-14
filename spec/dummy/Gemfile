@@ -35,6 +35,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'i18n_key_finder', github: 'piotr-szachewicz/rails-i18n-key-finder'
 end
 
 group :development do
