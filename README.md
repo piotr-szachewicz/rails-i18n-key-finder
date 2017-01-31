@@ -34,6 +34,10 @@ If you don't want to see the keys, just start your server as you normally
 would:
 
     $ bundle exec rails server
+    
+Here's how the gem works with the example Rails application available in the [spec/dummy](spec/dummy) directory. 
+
+![i18n-helper](https://cloud.githubusercontent.com/assets/4949616/22485031/4898996a-e804-11e6-8187-f86211f785d0.gif)
 
 ## Development
 
