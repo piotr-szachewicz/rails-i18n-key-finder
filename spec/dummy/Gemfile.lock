@@ -1,6 +1,6 @@
 GIT
-  remote: git://github.com/piotr-szachewicz/rails-i18n-key-finder.git
-  revision: bbc9ff4037b7f9a888c70102fec11ce6e605e266
+  remote: https://github.com/piotr-szachewicz/rails-i18n-key-finder.git
+  revision: 8d4ca82d52882fb8428fd4f4f2b59932d6cb061e
   specs:
     i18n_key_finder (0.1.0)
 
@@ -76,11 +76,13 @@ GEM
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
-    mini_portile2 (2.1.0)
+    mini_portile2 (2.8.0)
     minitest (5.10.1)
     multi_json (1.12.1)
-    nokogiri (1.7.0.1)
-      mini_portile2 (~> 2.1.0)
+    nokogiri (1.13.9)
+      mini_portile2 (~> 2.8.0)
+      racc (~> 1.4)
+    racc (1.6.0)
     rack (1.6.5)
     rack-test (0.6.3)
       rack (>= 1.0)
